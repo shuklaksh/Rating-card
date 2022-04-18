@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root {
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--LightGrey: hsl(217, 12%, 63%);
+--MediumGrey: hsl(216, 12%, 54%, 0.205);
+--DarkBlue: hsl(213, 19%, 18%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    color: var(--LightGrey);
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+main{
+    background-color: var(--DarkBlue);
+    width: 25%;
+    height: 45%;
+    padding: 1.5em 2.0em;
+    border-radius: 1.4em;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5em;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.main img {
+    border: 1px solid var(--DarkBlue);
+    background-color: var(--MediumGrey);
+    width: 1em;
+    padding: 1.1em;
+    border-radius: 50%;
+}
+.main h1{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 0.2em;
+    margin-top: 1em;
+}
+.ratings{
+    margin-bottom: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.rating-button{
+    background-color: var(--MediumGrey);
+    color: var(--LightGrey);
+    font-weight: bold;
+    font-size: 16px;
+    border: 0.2px solid var(--DarkBlue);
+    padding: 1.4em 1.57em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.rating-button:hover{
+    background-color: var(--LightGrey);
+    color: var(--White);
+}
+.main label{
+    background-color: var(--Orange);
+    color: var(--White);
+    width: 20em;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.6em;
+    margin-bottom: 20px;
+    border-radius: 1.2em;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.selected {
+    color: var(--White);
+    background-color: var(--Orange);
+}
+.selected:hover {
+    background-color: var(--Orange);
+}
+.main-2{
+    display: none;
+    padding: 1.5em 2.0em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#mark-rating{
+    color: var(--Orange);
+    background-color: var(--MediumGrey);
+    text-align: center;
+    padding: 0.3em;
+    border-radius: 1.2em;
+}
+#white{
+    color: var(--White);
+    margin-bottom: -0.2em;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width:500px) {
+    main,.main-2 {
+        width: 80%;
+    }
+}
